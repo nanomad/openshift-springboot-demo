@@ -1,6 +1,6 @@
 node('maven') {
   stage('Build') {
-    git url: "https://github.com/siamaksade/cart-service.git"
+    git url: "https://github.com/nanomad/openshift-springboot-demo.git"
     sh "mvn package"
     stash name:"jar", includes:"target/openshift-springboot-demo.jar"
   }
